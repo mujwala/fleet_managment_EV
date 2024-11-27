@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="registration-container">
+        <form class="registration-form" id="registrationForm">
+            <h2>Register</h2>
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+                <div id="passwordStrengthMessage" class="strength-message"></div> <!-- Strength message div -->
+            </div>
+            <div class="input-group">
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <div id="confirmPasswordMessage" class="confirm-message"></div> <!-- Password match message -->
+            </div>
+            <div class="input-group">
+                <select id="role" required>
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="Fleet Manager">Fleet Manager</option>
+                    <option value="Driver">Driver</option>
+                </select>
+            </div>
+            <button type="button" id="registerBtn">Register</button>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
